@@ -6,6 +6,7 @@ function IRTransmit(); //A Command that will be sent from the server to the Wifi
 
 //Raspberry Pi
 UpdateHome.java //A service running on the background checking regularly on the database to execute the commands.
+Full Web Design to the main controls over the system.
 
 /var/www/commads/gas.php //execute an Alarm if gas data is leaking.
 /var/www/commands/motion.php //in database 'home_db' table 'leds' put 1 or 0 to led_name='junk_room' based on motion data.
@@ -16,3 +17,6 @@ UpdateHome.java //A service running on the background checking regularly on the 
 Voice command app Using regular Google Speech API (try to add TTS functionality on executing commands)
 commands sent the same way with an HTTP request.. for example: we have a command 'Turn on led'
 this is what the HTTP request URL should look like --> RPi_IP/commands/leds.php?data=[on/off] <-- without the brackets.
+
+The voice commands app will be built with WebView layout to be able to import the UI implemented on the Raspberry Pi
+directly to the App.
