@@ -12,3 +12,7 @@ UpdateHome.java //A service running on the background checking regularly on the 
 /var/www/commands/ldr.php //in database 'home_db' table 'leds' put 1 or 0 to led_name='reception_room' based on ldr data
 /var/www/commands/IRT.php //send HTML request to the wifi module with the IRT with the command to be sent to the TV or Air Comditioner
  
+//Android
+Voice command app Using regular Google Speech API (try to add TTS functionality on executing commands)
+commands sent the same way with an HTTP request.. for example: we have a command 'Turn on led'
+this is what the HTTP request URL should look like --> RPi_IP/commands/leds.php?data=[on/off] <-- without the brackets.
